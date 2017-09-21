@@ -198,6 +198,19 @@ public class MessagesListAdapter<MESSAGE extends IMessage>
     }
 
     /**
+     * Check if message with specified id exists
+     *
+     * @param id an identifier of message to find.
+     *
+     * @return boolean, true if message with id exists
+     *
+     */
+    public boolean exist(String id, MESSAGE newMessage) {
+        int position = getMessagePositionById(id);
+        return position != -1;
+    }
+
+    /**
      * Deletes message.
      *
      * @param message message to delete.

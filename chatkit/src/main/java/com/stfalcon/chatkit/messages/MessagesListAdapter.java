@@ -205,7 +205,7 @@ public class MessagesListAdapter<MESSAGE extends IMessage>
      * @return boolean, true if message with id exists
      *
      */
-    public boolean exist(String id, MESSAGE newMessage) {
+    public boolean exists(String id) {
         int position = getMessagePositionById(id);
         return position != -1;
     }
